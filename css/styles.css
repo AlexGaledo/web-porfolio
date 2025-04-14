@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+
+body {
+  margin-left: 10%;
+}
+
+.logo{
+    border-radius: 10px;
+    margin-top: -1%
+}
+
+.main{
+    width: auto;
+    height : auto;
+    background-size: cover;
+    font-family: sans-serif;
+    
+}
+
+.navbar{
+    width: 86%;
+    height: 80px;
+    display: flex;
+    margin:auto;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.navbar .logo{
+    width: 160px;
+    cursor: pointer;
+    margin-bottom: -3%;
+    
+}
+
+.info .profile{
+  object-fit: cover;
+}
+
+.info .text{
+  display: inline-block;
+}
+
+.info{
+  display: inline-block;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+ul li a:hover{
+    color: #f1c40f;
+    text-decoration: none;
+}
+.info{
+    margin-left: 7%;
+    margin-top: 6%;
+    color: white;
+}
+.info h1 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.info h3{
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.info h1 span{
+    color: #8d8d8d;
+}
+
+
+.ctc-button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #fff4f4;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    overflow: hidden;
+    transition: color 0.4s ease;
+    border-radius: 6px;
+  }
+  
+  .ctc-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #606060;
+    z-index: -1;
+    transition: width 0.4s ease;
+  }
+  
+  .ctc-button:hover::before {
+    width: 100%;
+  }
+  
+  .ctc-button:hover {
+    color: white;
+  }
+  
+  .ctc-button {
+    position: relative;
+    z-index: 1;
+  }
+
+
+  .experience{
+    margin-top: 10%;
+  }
+  .experience .exp-box {
+    display: block;
+    border-radius: 20px;
+    margin-right: 10%;
+    color: white;
+  }
+
+  .experience h1 {
+    font-size: 40px;
+    color: white;
+    margin-top: 5%;
+  }
+
+  @media (max-width: 1024px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    .info {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 10%;
+      height: auto;
+    }
+  
+    .info .profile {
+      width: 50%;
+      height: auto;
+      margin: 0 auto 20px auto;
+    }
+  
+    .info .text {
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  
+    .ctc-button {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .navbar .logo {
+      width: 120px;
+    }
+  
+    .info h1 {
+      font-size: 22px;
+    }
+  
+    .info h3 {
+      font-size: 14px;
+    }
+  
+    .ctc-button {
+      padding: 10px 20px;
+    }
+  }
+
+  .contact{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    display: block;
+    margin-right: 20%;
+  }
+  
+.projects{
+  margin-top: 10%;
+  display: block;
+  height: auto;
+  height: 100vh;
+  margin-right: 20%;
+}
+.projects h1{
+  font-size: 40px;
+  color: white;
+  margin-top: 5%;
+  
+}
+
+.logo {
+  width: 370px;
+  object-fit: fill;
+  height: 150px;
+  border-radius: 10%;
+}
+
+.project1 .projectinfo{
+  display: inline-block;
+  padding: 30px;
+}
+
+.project1{
+  background-color: rgb(85, 85, 85);
+  display:block;
+  border-radius: 10%;
+  width: 400px;
+  margin-top: 5%;
+  display: inline-block;
+  border: solid 20px;
+  border-color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+  margin: 10px;
+}
+
+.project1:hover {
+  background-color: rgb(161, 150, 150);
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 1024px) {
+  .projects {
+    margin-top: 15%;
+    padding: 0 5%;
+    height: auto;
+    text-align: center;
+  }
+
+  .project1 {
+    width: 80%;
+    margin: 20px auto;
+    border-width: 10px;
+  }
+
+  .logo {
+    width: 250px;
+    height: auto;
+  }
+
+  body {
+    margin-left: 0;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar ul {
+    padding: 0;
+  }
+
+  .info {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects h1 {
+    font-size: 28px;
+  }
+
+  .project1 {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .info h1 {
+    font-size: 20px;
+  }
+
+  .info h3 {
+    font-size: 13px;
+  }
+
+  .info .text {
+    padding: 10px;
+  }
+
+  .contact {
+    margin-top: 15%;
+    padding: 15px;
+  }
+
+  .ctc-button {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  ul li {
+    display: block;
+    text-align: center;
+  }
+
+  .info .profile {
+    width: 80%;
+  }
+
+  .project1 {
+    width: 95%;
+  }
+
+  .projects h1 {
+    font-size: 24px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .ctc-button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+
+
+
+
+
